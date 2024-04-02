@@ -27,15 +27,15 @@ class Mahasiswa
     // member3 (method) - function return
     public function getGrade()
     {
-        if ($this->nilai > 85 && $this->nilai <= 100) {
+        if ($this->nilai >= 85 && $this->nilai <= 100) {
             return 'A';
-        } else if ($this->nilai > 75 && $this->nilai <= 85) {
+        } else if ($this->nilai >= 75 && $this->nilai < 85) {
             return 'B';
-        } else if ($this->nilai > 60 && $this->nilai <= 75) {
+        } else if ($this->nilai >= 60 && $this->nilai < 75) {
             return 'C';
-        } else if ($this->nilai > 30 && $this->nilai <= 60) {
+        } else if ($this->nilai >= 40 && $this->nilai < 60) {
             return 'D';
-        } else if ($this->nilai > 0 && $this->nilai <= 30) {
+        } else if ($this->nilai >= 0 && $this->nilai < 40) {
             return 'E';
         } else {
             return '';
